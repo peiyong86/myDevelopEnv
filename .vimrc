@@ -1,7 +1,7 @@
-# My .vimrc file
-# Author: peiyong
-# Email: peiyong86@gmail.com
-#-----------------------------------------------
+" My .vimrc file
+" Author: peiyong
+" Email: peiyong86@gmail.com
+" -----------------------------------------------
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
