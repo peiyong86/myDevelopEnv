@@ -1,2 +1,2 @@
 # myDevelopEnv
-just a place to save my develop environment setup file, such as .vimrc, .zshrc and Dockerfile
+Just some develop environment setup file for myself, such as .vimrc, .zshrc and Dockerfile.
