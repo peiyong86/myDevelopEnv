@@ -17,4 +17,11 @@ RUN wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py
 RUN pip install ipython
 # install fasd
 RUN mkdir Libs && cd Libs && git clone https://github.com/clvv/fasd.git && cd fasd && make install
+# get setup file
+RUN git clone https://github.com/peiyong86/myDevelopEnv.git 
+RUN cp myDevelopEnv/.vimrc ~
+RUN cp myDevelopEnv/.zshrc ~
+# install vim plugin
+RUN git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+RUN vim +PluginInstall +qall
 ENTRYPOINT bin/zsh
