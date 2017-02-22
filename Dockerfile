@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 # install python and other basic libs
 #RUN apt-get install -y python-software-properties
 RUN apt-get install -y wget tree htop vim git 
-RUN apt-get install -y build-essential
+RUN apt-get install -y build-essential cmake
 RUN apt-get install -y python-dev
 # install zsh
 RUN apt-get install zsh -y
