@@ -33,4 +33,4 @@ let g:UltiSnipsListSnippets="iI"
 
 set nu
 set tabstop=4
-set shitfwidth=4
+set shiftwidth=4
