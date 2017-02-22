@@ -32,3 +32,5 @@ let g:UltiSnipsJumpBackwardTrigger="OO"
 let g:UltiSnipsListSnippets="iI"
 
 set nu
+set tabstop=4
+set shitfwidth=4
