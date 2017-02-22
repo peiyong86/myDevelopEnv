@@ -24,7 +24,7 @@ filetype plugin indent on    " required
 
 " My other setting
  " For molokai
-colorcheme molokai
+colorscheme molokai
  " For UltiSnips
 let g:UltiSnipsExpandTrigger="ii"
 let g:UltiSnipsJumpForwardTrigger="II"
