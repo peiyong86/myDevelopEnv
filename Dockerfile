@@ -1,6 +1,7 @@
 FROM ubuntu
 MAINTAINER peiyong <peiyong86@gmail.com>
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
+RUN locale-gen en_US.UTF-8
 RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 # install python and other basic libs
 #RUN apt-get install -y python-software-properties
