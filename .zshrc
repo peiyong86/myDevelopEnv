@@ -29,3 +29,6 @@ unset fasd_cache
 alias c='fasd_cd -d'
 alias v='fasd -f -e vim'
 alias d='fasd -d'
+# set language
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
