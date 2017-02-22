@@ -19,10 +19,12 @@ RUN pip install ipython
 RUN mkdir Libs && cd Libs && git clone https://github.com/clvv/fasd.git && cd fasd && make install
 # get setup file
 RUN git clone https://github.com/peiyong86/myDevelopEnv.git 
-RUN cp myDevelopEnv/.vimrc ~
+RUN cp myDevelopEnv/.vimrc_plugin_install ~/.vimrc
 RUN cp myDevelopEnv/.zshrc ~
 # install vim plugin
 RUN git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 RUN vim +PluginInstall +qall
 RUN cd ~/.vim/bundle/YouCompleteMe && python install.py --all
+# copy vimrc file with settings
+RUN cp myDevelopEnv/.vimrc ~
 ENTRYPOINT bin/zsh
