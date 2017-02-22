@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 
 # Which plugins would you like to load?
 plugins=(git)
