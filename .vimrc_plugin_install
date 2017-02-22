@@ -1,0 +1,25 @@
+" My .vimrc plugin install file
+" Author: peiyong
+" Email: peiyong86@gmail.com
+" This vimrc file only used for plugin install.
+" Settings are stored in another vimrc file.
+" -----------------------------------------------
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" My Plugins
+Plugin 'tomasr/molokai'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'Valloric/YouCompleteMe'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
