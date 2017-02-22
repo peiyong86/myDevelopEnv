@@ -24,4 +24,5 @@ RUN cp myDevelopEnv/.zshrc ~
 # install vim plugin
 RUN git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 RUN vim +PluginInstall +qall
+RUN cd ~/.vim/bundle/YouCompleteMe && python install.py --all
 ENTRYPOINT bin/zsh
