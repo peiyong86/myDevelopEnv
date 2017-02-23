@@ -19,6 +19,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
+Plugin 'easymotion/vim-easymotion'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -47,6 +48,13 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+ " For Easymotion
+nmap s <Plug>(easymotion-overwin-f)
+nmap L <Plug>(easymotion-overwin-line)
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map F <Plug>(easymotion-bd-wl)
 
  " Others
 set nu
