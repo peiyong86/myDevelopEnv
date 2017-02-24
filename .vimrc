@@ -21,6 +21,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'vim-airline/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -83,6 +84,9 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 nnoremap <F10> :RainbowParenthesesToggle<CR>
+
+ " For Airline
+set laststatus=2
 
  " Others
 set nu
