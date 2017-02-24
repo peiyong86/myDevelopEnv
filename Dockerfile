@@ -28,6 +28,7 @@ RUN cp myDevelopEnv/.zshrc ~
 RUN git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 RUN vim +PluginInstall +qall
 RUN cd ~/.vim/bundle/YouCompleteMe && python install.py --clang-completer
+RUN mv /myDevelopEnv/python.snippets ~/.vim/bundle/vim-snippets/snippets
 # copy vimrc file with settings
-RUN cp myDevelopEnv/.vimrc ~
+RUN cp /myDevelopEnv/.vimrc ~
 ENTRYPOINT bin/zsh
