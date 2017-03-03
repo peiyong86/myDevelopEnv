@@ -22,6 +22,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'majutsushi/tagbar'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -87,6 +88,10 @@ nnoremap <F10> :RainbowParenthesesToggle<CR>
 
  " For Airline
 set laststatus=2
+
+ " For 'majutsushi/tagbar'
+au VimEnter * TagbarToggle
+nmap <C-m> :TagbarToggle<CR>
 
  " Others
 set nu
