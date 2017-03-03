@@ -1,14 +1,15 @@
-snippet docoptmain
+snippet docop
 	"""
 	Usage:
-		python ${1:`vim_snippets#Filename('$1.py')`} <${1:arg}>
+		${1:`vim_snippets#Filename('$1.py')`} <${1:arg}>
 	"""
 	from docopt import docopt
 	
 	
 	def main():
 		arguments = docopt(__doc__, version='${2:1.0}')
-		$1 = docopt['<$1>']
+		print(arguments)
+		$1 = arguments['<$1>']
 		${0}
 
 
