@@ -16,6 +16,8 @@ RUN chsh -s $(which zsh)
 # install pip, ipython
 RUN wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py
 RUN pip install ipython
+# install howdoi
+RUN pip install howdoi
 # install flake8
 RUN python -m pip install flake8
 # install fasd
