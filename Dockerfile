@@ -18,6 +18,8 @@ RUN wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py
 RUN pip install ipython
 # install howdoi
 RUN pip install howdoi
+# install docopt
+RUN pip install docopt
 # install flake8
 RUN python -m pip install flake8
 # install fasd
