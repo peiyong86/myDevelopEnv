@@ -24,6 +24,8 @@ RUN pip install docopt
 RUN python -m pip install flake8
 # install fasd
 RUN mkdir Libs && cd Libs && git clone https://github.com/clvv/fasd.git && cd fasd && make install
+# install exuberant-ctags
+RUN apt-get install -y exuberant-ctags
 # get setup file
 RUN git clone https://github.com/peiyong86/myDevelopEnv.git 
 RUN cp myDevelopEnv/.vimrc_plugin_install ~/.vimrc
