@@ -97,3 +97,4 @@ nmap <C-m> :TagbarToggle<CR>
 set nu
 set tabstop=4
 set shiftwidth=4
+set expandtab
