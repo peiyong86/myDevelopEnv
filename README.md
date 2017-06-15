@@ -5,3 +5,7 @@ Or pull image from my dockhub repo by command "**docker pull peiyong/developenv*
 
 To use it:
 docker run -v /your_work_path:/container_directory -it peiyong/developenv
+
+
+Shortcut of Vim plugins in my develop env:
+NerdTree: Ctrl + n
