@@ -9,3 +9,5 @@ docker run -v /your_work_path:/container_directory -it peiyong/developenv
 
 Shortcut of Vim plugins in my develop env:
 NerdTree: Ctrl + n
+Tagbar: Ctrl + m
+SyntasticToggleMode: Ctrl + b
