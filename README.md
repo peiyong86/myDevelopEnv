@@ -11,3 +11,9 @@ Shortcut of Vim plugins in my develop env:
 * NerdTree: Ctrl + n
 * Tagbar: Ctrl + m
 * SyntasticToggleMode: Ctrl + b
+
+* Easymotion
+* Moving in current line: F
+* Search word: /
+* Moving to certain line: L
+* Search character: S
