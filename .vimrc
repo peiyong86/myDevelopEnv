@@ -23,6 +23,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'majutsushi/tagbar'
+Plugin 'Yggdroot/indentLine'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -31,6 +32,11 @@ filetype plugin indent on    " required
 " My other setting
  " For molokai
 colorscheme molokai
+
+ " For indentLine
+let g:indentLine_color_term = 239                                                                                             |~                                       
+let g:indentLine_leadingSpaceChar = '·'                                                                                       |~                                       
+let g:indentLine_leadingSpaceEnabled = 1
 
  " For UltiSnips
 let g:UltiSnipsExpandTrigger="ii"
