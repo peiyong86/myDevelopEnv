@@ -55,13 +55,13 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 nmap <C-b> :SyntasticToggleMode<CR>
 
  " For Easymotion
 nmap s <Plug>(easymotion-overwin-f)
-nmap L <Plug>(easymotion-overwin-line)
+" nmap L <Plug>(easymotion-overwin-line)
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 map F <Plug>(easymotion-bd-wl)
@@ -99,6 +99,9 @@ set laststatus=2
  " For 'majutsushi/tagbar'
 au VimEnter * TagbarToggle
 nmap <C-m> :TagbarToggle<CR>
+
+ " For YouCompleteMe Color
+highlight Pmenu ctermfg=15 ctermbg=0 guifg=#ffffff guibg=#000000
 
  " Others
 set nu
